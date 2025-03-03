@@ -1,0 +1,21 @@
+name: Read Hello File 
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+  read_file:
+    runs-on: ubuntu-latest
+
+    steps:
+      # We Use this step for clone the repo or bring the new changes in the virtual environment.
+      - name: Checkout 
+        uses: actions/checkout@v3
+      
+      - name: Read The File
+        run: cat hello.txt
+
+
+
