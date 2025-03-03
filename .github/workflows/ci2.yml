@@ -4,6 +4,9 @@ on:
     push:
         branches:
             - main
+    pull_request:
+      branches:
+            - main
 
 jobs:
   read_file:
@@ -19,6 +22,12 @@ jobs:
         run: | 
          cd test
          python demo.py 
+      
+      - name: Read Demo2 file
+        run: |
+          cd test2
+          python demo2.py
+          python demo3.py
 
 
       - name: Check Python Version
