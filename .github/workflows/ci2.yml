@@ -16,3 +16,6 @@ jobs:
       
       - name: Read The File
         run: python demo.py
+        
+      - name: Check Python Version
+        run: python --version
