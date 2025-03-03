@@ -15,7 +15,4 @@ jobs:
         uses: actions/checkout@v3
       
       - name: Read The File
-        run: t hello.txt
-
-
-
+        run: python demo.py
