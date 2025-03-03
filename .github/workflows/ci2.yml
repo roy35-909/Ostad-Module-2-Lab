@@ -14,8 +14,11 @@ jobs:
       - name: Checkout 
         uses: actions/checkout@v3
       
+      - name: Change The Directory
+        run: cd test
+    
       - name: Read The File
         run: python demo.py
-        
+
       - name: Check Python Version
         run: python --version
