@@ -1,0 +1,22 @@
+name: Read The File .
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  read-hello-file:
+    runs-on: ubuntu-latest
+  
+    steps:
+    - name: git Checkout
+      uses: actions/checkout@v4
+
+    - name: Read The File
+      run: cat hello.txt
+
+
+
+
