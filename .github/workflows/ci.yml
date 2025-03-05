@@ -19,7 +19,7 @@ jobs:
 
     - name: Run The demo.py file
       run: |
-      cd test
-      python demo.py
-  
+        cd test
+        python demo.py
+    
 
