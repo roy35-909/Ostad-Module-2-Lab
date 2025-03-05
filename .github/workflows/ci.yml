@@ -17,6 +17,10 @@ jobs:
     - name: Read The File
       run: cat hello.txt
 
+    - name: Change The Directory
+      run: cd test
 
-
+    - name: Run The demo.py file
+      run: python demo.py
+  
 
