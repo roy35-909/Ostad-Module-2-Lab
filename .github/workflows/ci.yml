@@ -21,5 +21,8 @@ jobs:
       run: |
         cd test
         python demo.py
+        cd ../test2
+        python demo2.py
+        python demo3.py
     
 
