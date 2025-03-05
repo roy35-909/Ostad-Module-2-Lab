@@ -24,5 +24,8 @@ jobs:
         cd ../test2
         python demo2.py
         python demo3.py
+
+    - name: Run the Js File
+      run: node index.js
     
 
